@@ -18,3 +18,8 @@ $ npx eslint --ext .ts --config .eslintrc.js src
 ```
 $ npx eslint --ext .js --config .eslintrc.js src
 ```
+
+## Compile by TyeScript(maybe there are a lot of errors)
+```
+$ npx tsc
+```
