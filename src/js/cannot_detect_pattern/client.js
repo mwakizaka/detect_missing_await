@@ -17,11 +17,11 @@ PostClient.prototype.postData = async function(url, formData) {
     formData: formData
   };
   try {
-    requestPromise(options, false);
+    return await requestPromise(options, false);
   } catch (e) {
     console.log(e);
   }
 };
 
-export = PostClient;
+module.exports = PostClient;
 
