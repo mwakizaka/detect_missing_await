@@ -1,12 +1,15 @@
 {
     "compilerOptions": {
-        "rootDir": ".",
-        "outDir": "./built/",
-        "noImplicitAny": true,
-        "noEmitOnError": true,
+        "module": "commonjs",
+        "target": "es2015",
+        "rootDir": "./src",
+        "outDir": "dist",
+        "noImplicitAny": false,
+        "noEmitOnError": false,
         "removeComments": false,
         "sourceMap": true,
-        "target": "es2015"
+        "allowJs": true,
+        "checkJs": true
     },
     "include": [
         "./src/**/*"
