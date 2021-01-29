@@ -15,6 +15,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@types/node": "^14.14.22",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "util": "^0.12.2"
