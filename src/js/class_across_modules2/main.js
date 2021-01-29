@@ -6,8 +6,6 @@ setTimeout(async () => {
   const client = new Client("", "https://randomuser.me/api?format=json");
     
   client.getRequest();                // no-floating-promises error
-  
-  // You need some typing technique to detect missing await error
-  const result = client.getRequest(); 
+  const result = client.getRequest(); // You need to type to detect missing await error
   console.log(result);
 });

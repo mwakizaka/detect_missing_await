@@ -2,26 +2,22 @@
 
 import requestPromise = require("request-promise");
 
-class Client {
-  header: string;
-  url: string;
-  constructor(header: string, url: string) {
+export class Client {
+  constructor(header, url) {
     this.header = header;
     this.url = url;
   }
-  getRequest(): Promise<string> {
+  async getRequest() {
     const options = {
       method: 'GET',
       headers: this.header,
       url: this.url,
     };
     try {
-      return requestPromise(options);
+      return await requestPromise(options);
     } catch (e) {
       console.log(e);
     }
   }
 }
-
-export = Client;
 
